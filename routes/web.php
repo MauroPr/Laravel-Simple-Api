@@ -1,11 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Controller\PostController;
+use App\Http\Controllers\PostController;
 
 // Route::get('/', function () {
 //     return view('welcome');
 // });
 
 
-Route::get('/', PostController::class, 'Index');
+Route::get('/', [PostController::class, 'Index']);

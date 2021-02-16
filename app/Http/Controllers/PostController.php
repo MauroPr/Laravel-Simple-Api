@@ -7,7 +7,7 @@ use App\Models\Post;
 
 class PostController extends Controller
 {
-    public function index(){
+    public function Index(){
         return view('index',[
             'posts' => Post::latest()->paginate()
         ]);
